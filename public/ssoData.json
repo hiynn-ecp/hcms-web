@@ -1,0 +1,7 @@
+{
+  "baseUrl":"",
+  "loginUrl":"",
+  "urlList":[],
+  "whiteList":["blob:http"], 
+  "ssoLock": true
+}

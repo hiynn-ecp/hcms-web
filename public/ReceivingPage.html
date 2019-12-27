@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Receiving</title>
+    <script type="text/JavaScript">
+        var tokenName = 'hytoken';
+        var searchQueryString = window.location.search;
+        var exists = searchQueryString.indexOf(tokenName+'=')
+        if (exists == -1) {
+           window.location.href=this.location.protocol+'//'+this.location.host
+        }
+        var token = searchQueryString.substring(exists + tokenName.length+1);
+        console.log(token)
+        // 排除token变量以后的无用变量
+        exists = token.indexOf('&');
+        if (exists != -1) {
+            token = token.substring(0, exists);
+        }
+        exists = token.indexOf('#');
+        if (exists != -1) {
+            token = token.substring(0, exists);
+        }
+        window.localStorage.setItem(tokenName, token);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

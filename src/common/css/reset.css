@@ -1,0 +1,80 @@
+/*css reset*/
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+dl, ol, ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+input, input:focus {
+    outline: none;
+}
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+}
+/* 滚动条 */
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 4px;height:4px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #dddee0;
+  }
